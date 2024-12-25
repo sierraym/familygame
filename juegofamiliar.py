@@ -78,13 +78,13 @@ preguntas = [
     "¿Cuál es la forma favorita de pasar un fin de semana de …?",
     "¿Qué es lo que más miedo le da a …?",
     "¿Qué le hace vomitar del asco a …?",
-    "¿A qué tiene alergia …?"
-    "Elige una canción para que … baile ahora",
+    "¿A qué tiene alergia …?",
+    "… pondrá una canción para ti para que la bailes. Entre todos votarán si pasas la prueba o no ;),
     "¿En qué le cuesta gastarse el dinero a …?",
     "¿En qué no le cuesta gastarse el dinero a …?",
     "¿Cuál es la palabra que más repite …?",
-    "¿Cuál es la tarta favorita de …?"
-    "… ¿Es más de playa o de montaña?"
+    "¿Cuál es la tarta favorita de …?",
+    "… ¿Es más de playa o de montaña?",
 ]
 
 # Título y descripción
