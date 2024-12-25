@@ -89,7 +89,7 @@ preguntas = [
 ]
 
 # Título y descripción
-st.title("YUJUU Juego de Preguntas en Familia 🥳")
+st.title("YUJUU! Juego de Preguntas en Familia 🥳")
 st.markdown("""
 🎉 ¡Bienvenido a **YUJUU Juego de Preguntas en Familia**! 🎭  
 Un juego para conocernos mejor y reírnos juntos.  
