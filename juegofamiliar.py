@@ -73,7 +73,6 @@ a_quien = [
 # Título
 st.title("🎉 Juego de Preguntas en Familia ¡Yuuju! 🎉")
 
-# Botón personalizado
 st.markdown(
     """
     <style>
@@ -89,13 +88,15 @@ st.markdown(
         cursor: pointer;
     }
     div.stButton > button:first-child:hover {
-        background-color: #45a049;
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        background-color: #45a049; /* Verde más oscuro */
+        color: white; /* Mantén el texto blanco */
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Efecto de sombra */
     }
     </style>
     """,
     unsafe_allow_html=True,
 )
+
 
 # Botón para generar pregunta y destinatario
 if st.button("Nueva Pregunta"):
