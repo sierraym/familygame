@@ -3,7 +3,7 @@ import random
 
 # Listado de preguntas
 preguntas = [
-    "¿Cuál es la comida favorita de…?",
+        "¿Cuál es la comida favorita de…?",
     "¿Dónde le gustaría viajar a…?",
     "¿Qué trabajo tendría… si pudiera hacer cualquier cosa?",
     "Si… fuera un animal, ¿qué animal sería?",
@@ -81,57 +81,19 @@ preguntas = [
     "¿Qué le hace vomitar del asco a…?",
 ]
 
-# Listado de "a quién"
-a_quien = [
-    "La persona a tu derecha.",
-    "La persona a tu izquierda.",
-    "La persona enfrente de ti.",
-    "La persona más joven del grupo.",
-    "La persona mayor del grupo.",
-    "Elige a quien quieras.",
-    "Gira la botella para decidir.",
-    "La segunda persona a tu derecha.",
-    "La segunda persona a tu izquierda.",
-    "La última persona que habló en el grupo.",
-    "La última persona que llegó a esta reunión.",
-    "La persona que lleva algo rojo.",
-    "La persona que tenga las manos sobre la mesa.",
-    "Elige a alguien que tenga gafas.",
-]
-
 # Título
-st.title("🎉 Juego de Preguntas en Familia ¡Yuuju! 🎉")
+st.title("🎉 Juego de Preguntas en Familia 🎉")
 
-st.markdown(
-    """
-    <style>
-    div.stButton > button:first-child {
-        background-color: #4CAF50;
-        color: white;
-        border-radius: 12px;
-        padding: 10px 20px;
-        font-size: 18px;
-        font-weight: bold;
-        border: none;
-        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-        cursor: pointer;
-    }
-    div.stButton > button:first-child:hover {
-        background-color: #45a049; /* Verde más oscuro */
-        color: white; /* Mantén el texto blanco */
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Efecto de sombra */
-    }
-    </style>
-    """,
-    unsafe_allow_html=True,
-)
-
+# Ingresar nombres de los participantes
+nombres = st.text_area("Escribe los nombres de los participantes separados por comas:").split(",")
 
 # Botón para generar pregunta y destinatario
 if st.button("Nueva Pregunta"):
-    pregunta = random.choice(preguntas)
-    quien = random.choice(a_quien)
-    st.subheader("Pregunta:")
-    st.write(pregunta)
-    st.subheader("A quién:")
-    st.write(quien)
+    if len(nombres) > 1:
+        pregunta = random.choice(preguntas)
+        quien = random.choice([nombre.strip() for nombre in nombres if nombre.strip()])
+        pregunta_formateada = pregunta.replace("…", quien)
+        st.subheader("Pregunta:")
+        st.write(pregunta_formateada)
+    else:
+        st.warning("Por favor, introduce al menos dos nombres.")
