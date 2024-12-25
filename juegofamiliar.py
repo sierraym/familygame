@@ -79,7 +79,7 @@ preguntas = [
     "¿Qué es lo que más miedo le da a …?",
     "¿Qué le hace vomitar del asco a …?",
     "¿A qué tiene alergia …?",
-    "… pondrá una canción para ti para que la bailes. Entre todos votarán si pasas la prueba o no ;),
+    "… pondrá una canción para ti para que la bailes. Entre todos votarán si pasas la prueba o no ;)",
     "¿En qué le cuesta gastarse el dinero a …?",
     "¿En qué no le cuesta gastarse el dinero a …?",
     "¿Cuál es la palabra que más repite …?",
