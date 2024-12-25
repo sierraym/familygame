@@ -49,7 +49,6 @@ preguntas = [
     "¿A qué edad se casó …?",
     "¿Cuál es el invento que más le gusta a …?",
     "¿A qué famoso/a le gustaría conocer a …?",
-    "¿De qué se arrepiente …?",
     "¿Cómo es un día perfecto de …?",
     "¿Cuál es el puesto de trabajo de … y qué hace exactamente en su trabajo?",
     "¿Qué es lo que más le gusta hacer a …?",
