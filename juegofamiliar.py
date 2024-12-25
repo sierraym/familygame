@@ -73,6 +73,30 @@ a_quien = [
 # Título
 st.title("🎉 Juego de Preguntas en Familia ¡Yuuju! 🎉")
 
+# Botón personalizado
+st.markdown(
+    """
+    <style>
+    div.stButton > button:first-child {
+        background-color: #4CAF50;
+        color: white;
+        border-radius: 12px;
+        padding: 10px 20px;
+        font-size: 18px;
+        font-weight: bold;
+        border: none;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+    }
+    div.stButton > button:first-child:hover {
+        background-color: #45a049;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
+
 # Botón para generar pregunta y destinatario
 if st.button("Nueva Pregunta"):
     pregunta = random.choice(preguntas)
