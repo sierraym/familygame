@@ -100,8 +100,8 @@ st.markdown(
     """
     <style>
     div.stButton > button:first-child {
-        background-color: #4CAF50;
-        color: #fff;
+        background-color: #4CAF50; /* Verde original */
+        color: #fff; /* Texto blanco */
         border-radius: 12px;
         padding: 10px 20px;
         font-size: 18px;
@@ -115,10 +115,16 @@ st.markdown(
         color: #fff; /* Mantén el texto blanco */
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Efecto de sombra */
     }
+    div.stButton > button:first-child:active {
+        background-color: #3e8e41; /* Verde aún más oscuro */
+        color: #fff; /* Mantén el texto blanco */
+        box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.2); /* Efecto de presión */
+    }
     </style>
     """,
     unsafe_allow_html=True,
 )
+
 
 # Ingresar nombres de los participantes
 nombres = st.text_input("Escribe los nombres de los participantes separados por comas:").split(",")
