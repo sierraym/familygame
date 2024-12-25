@@ -33,12 +33,12 @@ preguntas = [
     "¿Cuál sería el mejor regalo para …?",
     "¿Cómo se llaman los suegros de …?",
     "¿Cuándo es el cumpleaños de …?",
-    "¿A qué jugaba cuando era pequeño/a?",
+    "¿A qué … jugaba cuando era pequeño/a?",
     "¿Cuál era el juguete preferido de … era pequeño/a?",
     "¿Cuál es la gamberrada más sonada de la infancia de …?",
     "¿Cómo castigaban a …?",
     "¿Cuál era la asignatura favorita del colegio de …?",
-    "¿Qué le daba miedo cuando era pequeño/a?",
+    "¿Qué le daba miedo … cuando era pequeño/a?",
     "¿Cómo se llama el mejor amigo o amiga de …?",
     "¿Cuál era el apodo de …?",
     "¿Cuál es el nombre del primer novio/a de …?",
@@ -81,10 +81,47 @@ preguntas = [
     "¿Qué le hace vomitar del asco a …?",
     "¿A qué tiene alergia …?"
     "Elige una canción para que … baile ahora",
+    "¿En qué le cuesta gastarse el dinero a …?",
+    "¿En qué no le cuesta gastarse el dinero a …?",
+    "¿Cuál es la palabra que más repite …?",
+    "¿Cuál es la tarta favorita de …?"
+    "… ¿Es más de playa o de montaña?"
 ]
 
-# Título
-st.title("🎉 Juego de Preguntas en Familia 🎉")
+# Título y descripción
+st.title("YUJUU Juego de Preguntas en Familia 🥳")
+st.markdown("""
+🎉 ¡Bienvenido a **YUJUU Juego de Preguntas en Familia**! 🎭  
+Un juego para conocernos mejor y reírnos juntos.  
+¿Cómo funciona?
+1. Escribe los nombres de los participantes y presiona **Nueva Pregunta**.  
+2. Responde y si no aciertas, ¡minimulta!
+""")
+
+# Estilo personalizado para el botón
+st.markdown(
+    """
+    <style>
+    div.stButton > button:first-child {
+        background-color: #4CAF50;
+        color: white;
+        border-radius: 12px;
+        padding: 10px 20px;
+        font-size: 18px;
+        font-weight: bold;
+        border: none;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+    }
+    div.stButton > button:first-child:hover {
+        background-color: #45a049; /* Verde más oscuro */
+        color: white; /* Mantén el texto blanco */
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Efecto de sombra */
+    }
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
 
 # Ingresar nombres de los participantes
 nombres = st.text_input("Escribe los nombres de los participantes separados por comas:").split(",")
