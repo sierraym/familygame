@@ -92,7 +92,7 @@ preguntas = [
 st.title("YUJUU! Juego de Preguntas en Familia 🥳")
 st.markdown("""
 ¡Bienvenido a **YUJUU Juego de Preguntas en Familia**! Un juego para conocernos mejor y reírnos juntos.  
-¿Cómo funciona? 1. Escribe los nombres de los participantes y presiona **Nueva Pregunta**. 2. Responde y si no aciertas, ¡minimulta!
+¿Cómo funciona? 1. Escribe los nombres de los participantes y presiona **Nueva Pregunta**. 2. Di la respuesta correcta y si no aciertas ¡minimulta! 😜
 """)
 
 # Estilo personalizado para el botón
