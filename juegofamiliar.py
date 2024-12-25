@@ -91,7 +91,7 @@ preguntas = [
 # Título y descripción
 st.title("YUJUU! Juego de Preguntas en Familia 🥳")
 st.markdown("""
-¡Bienvenido a **YUJUU Juego de Preguntas en Familia**! Un juego para conocernos mejor y reírnos juntos.  
+¡Bienvenido a **YUJUU! Juego de Preguntas en Familia**! Un juego para conocernos mejor y reírnos juntos.  
 ¿Cómo funciona? 1. Escribe los nombres de los participantes y presiona **Nueva Pregunta**. 2. Di la respuesta correcta y si no aciertas ¡minimulta! 😜
 """)
 
@@ -101,7 +101,7 @@ st.markdown(
     <style>
     div.stButton > button:first-child {
         background-color: #4CAF50;
-        color: white;
+        color: #fff;
         border-radius: 12px;
         padding: 10px 20px;
         font-size: 18px;
@@ -112,7 +112,7 @@ st.markdown(
     }
     div.stButton > button:first-child:hover {
         background-color: #45a049; /* Verde más oscuro */
-        color: white; /* Mantén el texto blanco */
+        color: #fff; /* Mantén el texto blanco */
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Efecto de sombra */
     }
     </style>
