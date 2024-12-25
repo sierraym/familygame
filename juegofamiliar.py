@@ -87,7 +87,7 @@ preguntas = [
 st.title("🎉 Juego de Preguntas en Familia 🎉")
 
 # Ingresar nombres de los participantes
-nombres = st.text_area("Escribe los nombres de los participantes separados por comas:").split(",")
+nombres = st.text_input("Escribe los nombres de los participantes separados por comas:").split(",")
 
 # Botón para generar pregunta y destinatario
 if st.button("Nueva Pregunta"):
